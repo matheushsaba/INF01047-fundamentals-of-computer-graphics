@@ -585,8 +585,8 @@ void ComputeNormals(ObjModel* model)
             // PREENCHA AQUI o cálculo da normal de um triângulo cujos vértices
             // estão nos pontos "a", "b", e "c", definidos no sentido anti-horário.
             //const glm::vec4  n = glm::vec4(0.0f,0.0f,0.0f,0.0f);
-            const glm::vec4  u = c-a;                   // Slide 163 das Aulas 17 e 18 - Modelos de Iluminação
-            const glm::vec4  v = b-a;                   // Slide 163 das Aulas 17 e 18 - Modelos de Iluminação
+            const glm::vec4  u = b-a;                   // Slide 163 das Aulas 17 e 18 - Modelos de Iluminação
+            const glm::vec4  v = c-a;                   // Slide 163 das Aulas 17 e 18 - Modelos de Iluminação
             const glm::vec4  n = crossproduct(u, v);    // Slide 164 das Aulas 17 e 18 - Modelos de Iluminação
 
             for (size_t vertex = 0; vertex < 3; ++vertex)
